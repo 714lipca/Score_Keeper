@@ -60,14 +60,12 @@ tableButton.addEventListener('click', function() {
     else
     {
         tableUl.hidden = true
-    }
-    
+    } 
 })
 
 
 
-function updateScores(player, opponent, winnerName)
-{
+function updateScores(player, opponent, winnerName) {
     if (!isGameOver)
     {
         player.score++;
@@ -91,8 +89,7 @@ function updateScores(player, opponent, winnerName)
     }  
 }
 
-function reset ()
-{
+function reset () {
     isGameOver = false;
     for (let p of [p1,p2])
     {
@@ -104,6 +101,7 @@ function reset ()
 }
 
 function obtainDate () {
+
     const date = new Date();
     const hour = date.getHours();
     let minutes = date.getMinutes();
@@ -118,13 +116,11 @@ function obtainDate () {
     {
         minutes = `0${date.getMinutes()}`; 
     }
-    
-    
+     
 return `${hour}:${minutes}:${seconds}`;
 }
 
-function Match (playerOne = "Felix", playerTwo = "Laura", p1Score = 3, p2Score = 2, hour = 12)
-{
+function Match (playerOne = "Felix", playerTwo = "Laura", p1Score = 3, p2Score = 2, hour = 12) {
     this.playerOne = playerOne;
     this.playerTwo = playerTwo;
     this.p1Score = p1Score;
