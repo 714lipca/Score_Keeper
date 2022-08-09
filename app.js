@@ -63,8 +63,6 @@ tableButton.addEventListener('click', function() {
     } 
 })
 
-
-
 function updateScores(player, opponent, winnerName) {
     if (!isGameOver)
     {
